@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>สรุปงบ 3Q2026 (SET + mai) — รายงานกำไรไตรมาส</title>
+<style>
+  :root { --pos: #27ae60; --neg: #c0392b; --accent: #2c3e50; }
+  * { box-sizing: border-box; }
+  body { font-family: -apple-system,'Segoe UI','Noto Sans Thai',Tahoma,sans-serif; margin: 0; background: #f4f6f9; color: #1c1e21; }
+  .wrap { max-width: 1400px; margin: 0 auto; padding: 20px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: #7f8c8d; font-size: 13px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 16px 0; }
+  .card { background: #fff; border-radius: 10px; padding: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+  .card .k { font-size: 12px; color: #7f8c8d; }
+  .card .v { font-size: 20px; font-weight: 700; margin-top: 4px; }
+  .card .v.small { font-size: 15px; }
+  .pos { color: var(--pos); } .neg { color: var(--neg); } .zero { color: #7f8c8d; } .na { color: #bdc3c7; }
+  .tabs { display: flex; gap: 8px; margin: 20px 0 12px; }
+  .tab { padding: 8px 16px; border-radius: 8px; background: #e8ecf1; cursor: pointer; font-size: 14px; font-weight: 600; }
+  .tab.active { background: var(--accent); color: #fff; }
+  .panel { display: none; }
+  .panel.active { display: block; }
+  table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.08); font-size: 13px; }
+  th, td { padding: 8px 10px; border-bottom: 1px solid #ecf0f1; text-align: left; white-space: nowrap; }
+  th { background: var(--accent); color: #fff; font-size: 12px; position: sticky; top: 0; }
+  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+  tr:hover td { background: #f8fafc; }
+  .scroll { overflow-x: auto; border-radius: 10px; max-height: 70vh; overflow-y: auto; }
+  .toolbar { display: flex; align-items: center; gap: 8px; margin-bottom: 10px; }
+  .toolbar select { padding: 6px 10px; border-radius: 8px; border: 1px solid #d0d5dd; font-size: 13px; background: #fff; }
+  .note { background: #fff8e6; border: 1px solid #f0d488; border-radius: 8px; padding: 12px; font-size: 13px; color: #7a5c00; margin-top: 16px; }
+  .new-banner { background: #e8f8f0; border: 1px solid #a3e4c8; border-radius: 10px; padding: 12px 16px; margin: 14px 0; }
+  .nb-title { font-weight: 700; font-size: 14px; color: #1e7a46; margin-bottom: 8px; }
+  .nb-chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip { background: #fff; border: 1px solid #a3e4c8; border-radius: 20px; padding: 3px 10px; font-size: 12px; font-weight: 600; }
+  .chip .sub { font-size: 10px; }
+  .total-row td { background: #f0f4f8 !important; border-top: 2px solid var(--accent); font-weight: 600; }
+  .new-badge { display: inline-block; background: #27ae60; color: #fff; font-size: 10px; font-weight: 700; border-radius: 4px; padding: 1px 6px; margin-left: 6px; vertical-align: middle; }
+  .new-col { text-align: center; width: 44px; min-width: 44px; }
+  .foot { color: #95a5a6; font-size: 12px; margin: 20px 0; text-align: center; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>📊 สรุปงบไตรมาส 3/2026 (Q3/2026)</h1>
+  <div class="sub">SET + mai · ข้อมูล ณ 2026-10-19 · กำไรสุทธิ (Net Profit) หน่วยล้านบาท · แหล่งข้อมูล: SETSMART stockComparisonFinancial (Financial Data & Key Ratios)</div>
+
+  <div class="new-banner">
+  <div class="nb-title">🆕 งบใหม่ที่รายงานเพิ่มวันนี้ (1 ราย)</div>
+  <div class="nb-chips"><span class="chip" title="กำไร 209.6 ลบ. · ประกาศงบ 2026-10-19">🆕 TSTH <span class="sub">SET · 10-19</span></span></div>
+</div>
+
+  <div class="cards">
+    <div class="card"><div class="k">หุ้นรายงานงบแล้ว</div><div class="v">2 <span class="sub">ตัว</span></div><div class="sub">SET 2 · mai 0</div></div>
+    <div class="card"><div class="k">กำไรรวม 3Q26 (ลบ.)</div><div class="v">851.9</div><div class="sub">SET 851.9 · mai 0.0</div></div>
+    <div class="card"><div class="k">รายได้รวม 3Q26 (ลบ.)</div><div class="v small">10,503.8</div><div class="sub">SET 10,503.8 · mai 0.0</div></div>
+    <div class="card"><div class="k">กำไร QoQ (เทียบ 2Q26)</div><div class="v neg">-29.2%</div><div class="sub">SET -29.2% · mai -</div></div>
+    <div class="card"><div class="k">กำไร YoY (เทียบ 3Q25)</div><div class="v neg">-48.3%</div><div class="sub">SET -48.3% · mai -</div></div>
+  </div>
+
+  <div class="tabs">
+    <div class="tab active" onclick="showTab('t1')">📋 รายละเอียดรายหุ้น</div>
+    <div class="tab" onclick="showTab('t2')">🏭 สรุปแยก Sector</div>
+  </div>
+
+  <div id="t1" class="panel active">
+    <div class="toolbar">
+      <span class="sub">เรียงลำดับ:</span>
+      <select id="sortSel" onchange="sortTable(this.value)">
+        <option value="np">กำไร 3Q26 (มาก→น้อย)</option>
+        <option value="sym">ตัวอักษร A-Z</option>
+        <option value="mcap">Market Cap (มาก→น้อย)</option>
+        <option value="eps">EPS (มาก→น้อย)</option>
+        <option value="qoq">% QoQ (มาก→น้อย)</option>
+        <option value="yoy">% YoY (มาก→น้อย)</option>
+        <option value="new">🆕 New ก่อน (แล้ว A-Z)</option>
+      </select>
+    </div>
+    <div class="scroll">
+    <table id="mainTable">
+      <thead><tr>
+        <th>หุ้น</th><th class="new-col">New</th><th>Sector</th><th class="num">Mkt Cap</th><th class="num">EPS</th>
+        <th class="num">กำไร 3Q26</th><th class="num">กำไร 2Q26</th><th class="num">กำไร 3Q25</th>
+        <th class="num">QoQ</th><th class="num">YoY</th><th class="num">รายได้ 3Q26</th>
+        <th class="num">-1D</th><th class="num">-1W</th><th class="num">-2W</th><th class="num">-1M</th><th class="num">YTD</th>
+        <th>ราคา 10 วันทำการ</th>
+      </tr></thead>
+      <tbody><tr data-sym="AEONTS" data-market="SET" data-new="0" data-np="642361.0" data-mcap="23187500000.0" data-eps="2.59" data-qoq="-19.0" data-yoy="-18.8">
+<td><b>AEONTS</b><br><span class="sub">SET</span></td>
+<td class="new-col"></td>
+<td>FIN</td>
+<td class="num">23.2B</td>
+<td class="num">2.59</td>
+<td class="num">642.4</td>
+<td class="num">793.0</td>
+<td class="num">791.5</td>
+<td class="num neg">-19.0%</td>
+<td class="num neg">-18.8%</td>
+<td class="num">4,394.3</td>
+<td class="num neg">-0.3%</td>
+<td class="num pos">+1.6%</td>
+<td class="num pos">+3.3%</td>
+<td class="num neg">-4.6%</td>
+<td class="num neg">-9.5%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="20.7" width="7.0" height="3.3" fill="#95a5a6"/><rect x="10.0" y="20.7" width="7.0" height="3.3" fill="#27ae60"/><rect x="20.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="30.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="40.0" y="15.7" width="7.0" height="8.3" fill="#27ae60"/><rect x="50.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="60.0" y="14.0" width="7.0" height="10.0" fill="#27ae60"/><rect x="70.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="5.7" width="7.0" height="18.3" fill="#c0392b"/></svg></td>
+</tr>
+<tr data-sym="TSTH" data-market="SET" data-new="1" data-np="209564.0" data-mcap="8000463805.6" data-eps="0.02" data-qoq="-48.9" data-yoy="-75.5">
+<td><b>TSTH</b><br><span class="sub">SET</span></td>
+<td class="new-col"><span class="new-badge">🆕</span></td>
+<td>STEEL AN</td>
+<td class="num">8.0B</td>
+<td class="num">0.02</td>
+<td class="num">209.6</td>
+<td class="num">409.7</td>
+<td class="num">857.0</td>
+<td class="num neg">-48.9%</td>
+<td class="num neg">-75.5%</td>
+<td class="num">6,109.6</td>
+<td class="num zero">+0.0%</td>
+<td class="num pos">+3.3%</td>
+<td class="num pos">+1.1%</td>
+<td class="num neg">-1.0%</td>
+<td class="num pos">+50.8%</td>
+<td><svg width="100" height="24" viewBox="0 0 100 24" style="display:block"><rect x="0.0" y="9.0" width="7.0" height="15.0" fill="#95a5a6"/><rect x="10.0" y="14.0" width="7.0" height="10.0" fill="#c0392b"/><rect x="20.0" y="19.0" width="7.0" height="5.0" fill="#c0392b"/><rect x="30.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="40.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="50.0" y="19.0" width="7.0" height="5.0" fill="#27ae60"/><rect x="60.0" y="22.0" width="7.0" height="2.0" fill="#c0392b"/><rect x="70.0" y="22.0" width="7.0" height="2.0" fill="#27ae60"/><rect x="80.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/><rect x="90.0" y="4.0" width="7.0" height="20.0" fill="#27ae60"/></svg></td>
+</tr>
+<tr class="total-row" data-sym="TOTAL" data-market="" data-new="0" data-np="9e18" data-mcap="-1" data-eps="-1e18">
+<td><b>รวมทุกหุ้น (2 ตัว)</b></td>
+<td class="new-col">-</td>
+<td>-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">851.9</td>
+<td class="num">1,202.7</td>
+<td class="num">1,648.5</td>
+<td class="num neg"><b>-29.2%</b></td>
+<td class="num neg"><b>-48.3%</b></td>
+<td class="num">10,503.8</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td class="num">-</td>
+<td>-</td>
+</tr></tbody>
+    </table>
+    </div>
+  </div>
+
+  <div id="t2" class="panel">
+    <div class="scroll">
+    <table>
+      <thead><tr>
+        <th>Sector</th><th class="num">หุ้น</th><th class="num">มีกำไร (บวก)</th><th class="num">กำไรรวม (ลบ.)</th>
+        <th class="num">QoQ</th><th class="num">YoY</th>
+      </tr></thead>
+      <tbody><tr>
+<td><b>FIN</b></td>
+<td class="num">1</td>
+<td class="num">1/1</td>
+<td class="num">642.4</td>
+<td class="num neg">-19.0%</td>
+<td class="num neg">-18.8%</td>
+</tr>
+<tr>
+<td><b>STEEL AN</b></td>
+<td class="num">1</td>
+<td class="num">1/1</td>
+<td class="num">209.6</td>
+<td class="num neg">-48.9%</td>
+<td class="num neg">-75.5%</td>
+</tr></tbody>
+    </table>
+    </div>
+  </div>
+
+  <div class="note">📌 <b>หมายเหตุ:</b> กำไร/รายได้หน่วย '000 บาท → แสดงเป็นล้านบาท · QoQ = เทียบ 2Q2026, YoY = เทียบ 3Q2025 · <b>n.m. = not meaningful</b> — ไตรมาสที่เทียบกันมีตัวใดตัวหนึ่งขาดทุน (กำไร↔ขาดทุน / ขาดทุน↔ขาดทุน) ไม่แสดง % เพื่อไม่ misleading · % เปลี่ยนราคาคำนวณจากราคาปิด (DuckDB) · Sparkline = ราคาปิด 10 วันทำการล่าสุด · หุ้นที่ยังไม่รายงานงบจะไม่แสดงในตาราง</div>
+  <div class="foot">สร้างโดย Strategy Team · UOB Kay Hian (Thailand) Research · อัปเดตล่าสุด 2026-10-19</div>
+</div>
+<script>
+function showTab(id) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p => p.classList.remove('active'));
+  event.currentTarget.classList.add('active');
+  document.getElementById(id).classList.add('active');
+}
+function sortTable(mode) {
+  const tbody = document.querySelector('#mainTable tbody');
+  const all = [...tbody.querySelectorAll('tr')];
+  const rows = all.filter(r => r.getAttribute('data-sym') !== 'TOTAL');
+  const total = all.filter(r => r.getAttribute('data-sym') === 'TOTAL');
+  const get = (r, k) => r.getAttribute('data-' + k);
+  rows.sort((a, b) => {
+    if (mode === 'sym') {
+      const am = get(a,'market'), bm = get(b,'market');
+      if (am !== bm) return am.localeCompare(bm);
+      return get(a,'sym').localeCompare(get(b,'sym'));
+    }
+    if (mode === 'new') {
+      const an = get(a,'new'), bn = get(b,'new');
+      if (an !== bn) return bn.localeCompare(an);   // new (1) first
+      const am = get(a,'market'), bm = get(b,'market');
+      if (am !== bm) return am.localeCompare(bm);
+      return get(a,'sym').localeCompare(get(b,'sym'));  // then A-Z
+    }
+    const av = parseFloat(get(a, mode)), bv = parseFloat(get(b, mode));
+    if (mode === 'mcap' && av < 0) return 1;
+    if (mode === 'mcap' && bv < 0) return -1;
+    return bv - av;
+  });
+  rows.forEach(r => tbody.appendChild(r));
+  total.forEach(r => tbody.appendChild(r));
+}
+</script>
+</body>
+</html>
